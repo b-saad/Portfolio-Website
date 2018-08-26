@@ -7,21 +7,115 @@
         <title>Bilal Saad Homepage</title>
     </head>
 <body>
-    <nav id="main_nav">
-        <ul>
-            <li>
-                <a>About Me</a>
-            </li>
-            <li>
-                <a>Skills Profile</a>
-            </li>
-            <li>
-                <a>Projects</a>
-            </li>
-            <li>
+    <header>
+        <nav id="main_nav">
+            <ul>
+                <li>
+                    <a href="#about_me">About Me</a>
+                </li>
+                <li>
+                    <a href="#skills_profile">Skills Profile</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact_info">Contact Information</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- About me section -->
+        <section id="about_me">
+            <h1 >About Me</h1>
+            <p>Hey I'm Bilal, nice to meet you. I am currently a Computer Science student at the University of Waterloo. Other than programming, I spend my time reading books, enoying delicous food and dabbling in photography.</p>
+            <button>
                 <a href="../Resume%20PDF.pdf" target="_blank">Resume</a>
-            </li>
-        </ul>
-    </nav>
+            </button>
+        </section>
+
+        <!-- Skills Profile -->
+        <section id="skills_profile">
+            <h1 >Skills Profile</h1>
+            <p>1 = Basic Knowledge, 3 = Working Knowledge, 5 = Proficient</p>
+            <ul>
+                <li>
+                    <h2>Programming languages</h2>
+                    <ul>
+                        <li>
+                            <div>Java</div>
+                        </li>
+                        <li>
+                            <div>C</div>
+                        </li>
+                        <li>
+                            <div>C++</div>
+                        </li>
+                        <li>
+                            <div>Python</div>
+                        </li>
+                        <li>
+                            <div>HTML</div>
+                        </li>
+                        <li>
+                            <div>CSS</div>
+                        </li>
+                        <li>
+                            <div>Javascript</div>
+                        </li>
+                        <li>
+                            <div>Swift</div>
+                        </li>
+                        <li>
+                            <div>Racket</div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Technolegies</h2>
+                    <ul>
+                        <li>
+                            <div>GIT</div>
+                        </li>
+                        <li>
+                            <div>SQL</div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Projects Section-->
+        <section id="projects">
+            <h1>Projects</h1>
+            <ul>
+                <li>
+                    <div class="project">Hangman</div>
+                    <h2 class="short_project_description">Java Minigame</h2>
+                    <button>More Info</button>
+                        <div class="description">
+                            <p>A version of the classic game Hangman. The game utilizes File I/O for a word bank and Java Graphics for a GUI.</p>
+                            <a href="https://github.com/b-saad/" target="_blank">https://github.com/b-saad/</a>
+                        </div>
+                </li>
+            </ul>
+        </section>
+        
+        <!-- Contact Information Section -->
+        <section id="contact_info">
+            <h1>Contact Information</h1>
+            <h2>Email: bsaad@uwaterloo.ca</h2>
+            <h2>
+                LinkedIn:
+                <a href="https://www.linkedin.com/?trk=nav_logo">linkedin.com</a>
+            </h2>
+            <h2>
+                GitHub
+                <a href="https://github.com/b-saad/" target="_blank">github.com/b-saad/</a>
+            </h2>
+        </section>
+    </main>
 </body>
 </html>
