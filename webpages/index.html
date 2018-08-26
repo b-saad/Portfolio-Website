@@ -3,41 +3,47 @@
     <head>
         <meta charset="utf-8">
         <meta name="description" content="The homepage for Bilal Saad's portfolio website">
-        <link rel="stylesheet"  href="../_css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700" rel="stylesheet">
+        <link rel="stylesheet"  href="../css/styles.css">
         <title>Bilal Saad Homepage</title>
     </head>
 <body>
     <header>
-        <nav id="main_nav">
-            <ul>
-                <li>
-                    <a href="#about_me">About Me</a>
-                </li>
-                <li>
-                    <a href="#skills_profile">Skills Profile</a>
-                </li>
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-                <li>
-                    <a href="#contact_info">Contact Information</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="container">
+            <nav id="main_nav">
+                <ul>
+                    <li>
+                        <a href="#about_me">About Me</a>
+                    </li>
+                    <li>
+                        <a href="#skills_profile">Skills Profile</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact_info">Contact Information</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
         <!-- About me section -->
         <section id="about_me">
+            <div class="container">
             <h1 >About Me</h1>
             <p>Hey I'm Bilal, nice to meet you. I am currently a Computer Science student at the University of Waterloo. Other than programming, I spend my time reading books, enoying delicous food and dabbling in photography.</p>
-            <button>
-                <a href="../Resume%20PDF.pdf" target="_blank">Resume</a>
-            </button>
+            <a href="../Resume%20PDF.pdf" target="_blank">
+                <button>Resume</button>
+            </a>
+            </div>
         </section>
 
         <!-- Skills Profile -->
         <section id="skills_profile">
+            <div class="container">
             <h1 >Skills Profile</h1>
             <p>1 = Basic Knowledge, 3 = Working Knowledge, 5 = Proficient</p>
             <ul>
@@ -45,31 +51,40 @@
                     <h2>Programming languages</h2>
                     <ul>
                         <li>
-                            <div>Java</div>
+                            <div class="skill">Java</div>
+                            <div class="skill_bar" level="5"></div>
                         </li>
                         <li>
-                            <div>C</div>
+                            <div class="skill" >C</div>
+                            <div class="skill_bar" level="4"></div>
                         </li>
                         <li>
-                            <div>C++</div>
+                            <div class="skill">C++</div>
+                            <div class="skill_bar" level="3"></div>
                         </li>
                         <li>
-                            <div>Python</div>
+                            <div class="skill">Python</div>
+                            <div class="skill_bar" level="5"></div>
                         </li>
                         <li>
-                            <div>HTML</div>
+                            <div class="skill">HTML</div>
+                            <div class="skill_bar" level="4"></div>
                         </li>
                         <li>
-                            <div>CSS</div>
+                            <div class="skill" >CSS</div>
+                            <div class="skill_bar" level="4"></div>
                         </li>
                         <li>
-                            <div>Javascript</div>
+                            <div class="skill">Javascript</div>
+                            <div class="skill_bar" level="4"></div>
                         </li>
                         <li>
-                            <div>Swift</div>
+                            <div class="skill">Swift</div>
+                            <div class="skill_bar" level="2"></div>
                         </li>
                         <li>
-                            <div>Racket</div>
+                            <div class="skill">Racket</div>
+                            <div class="skill_bar" level="4"></div>
                         </li>
                     </ul>
                 </li>
@@ -85,15 +100,17 @@
                     </ul>
                 </li>
             </ul>
+            </div>
         </section>
 
         <!-- Projects Section-->
         <section id="projects">
+            <div class="container">
             <h1>Projects</h1>
             <ul>
                 <li>
-                    <div class="project">Hangman</div>
-                    <h2 class="short_project_description">Java Minigame</h2>
+                    <h2 class="project">Hangman</h2>
+                    <div class="short_project_description">Java Minigame</div>
                     <button>More Info</button>
                         <div class="description">
                             <p>A version of the classic game Hangman. The game utilizes File I/O for a word bank and Java Graphics for a GUI.</p>
@@ -101,10 +118,12 @@
                         </div>
                 </li>
             </ul>
+            </div>
         </section>
         
         <!-- Contact Information Section -->
         <section id="contact_info">
+            <div class="container">
             <h1>Contact Information</h1>
             <h2>Email: bsaad@uwaterloo.ca</h2>
             <h2>
@@ -115,6 +134,7 @@
                 GitHub
                 <a href="https://github.com/b-saad/" target="_blank">github.com/b-saad/</a>
             </h2>
+            </div>
         </section>
     </main>
 </body>
