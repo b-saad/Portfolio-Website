@@ -44,18 +44,16 @@ h2 {
 
 .container {
     width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    margin: 0 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 button {
     border: 2px solid #27A9F9;
     transition-duration: 0.4s;
-
+    padding: 1%;
+    text-transform: uppercase;
 }
 
 button:hover {
@@ -91,6 +89,10 @@ header a {
     text-decoration: none;
 }
 
+header a:hover {
+    color: #27A9F9;
+}
+
 
 /*************** About Me Section Styles *****************/
 
@@ -103,16 +105,15 @@ header a {
     margin-bottom: 1%;
 }
 
+#about_me a {
+    text-decoration: none;
+    color: #27A9F9;
+}
+
 #about_me button {
     width: 100%;
-    
+    font-size: 110%;
 }
-
-#about_me a {
-    color: #27A9F9;
-    text-decoration: none;
-}
-
 
 
 /*************** Skills Profile Section Styles *****************/
@@ -144,14 +145,38 @@ header a {
     background: #FFFFFF;
 }
 
-#projects ul {
-    margin-top: 0;
-    margin-bottom: 0;
+.left_col, .mid_col, .right_col {
+    display: inline-block;
+    padding: 15% 8% 1% 1%;
+    width: 25%;
+    margin: 2% 4% 0 4%;
+    background: #F4F5F7;
+    border: 2px solid #27A9F9;
 }
 
-.short_project_description {
+#projects ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.title_desc {
+    display: inline-block;
+    float: left;
+    padding: 0 0 2% 2%;
+}
+
+.short_desc {
     font-size: 0.75em;
 }
+
+#projects button {
+    display: inline-block;
+    padding: 5%;
+    position: relative;
+    left: 50%;
+}
+
 
 
 /*************** Contact Information Section Styles *****************/
