@@ -3,8 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="description" content="The homepage for Bilal Saad's portfolio website">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700" rel="stylesheet">
-        <link rel="stylesheet"  href="../css/styles.css">
+        <link rel="stylesheet"  href="css/styles.css">
         <title>Bilal Saad Homepage</title>
     </head>
 <body>
@@ -30,6 +31,13 @@
     </header>
 
     <main>
+        
+        <!--   Landing page      -->
+        <section id="landing">
+        
+        </section>
+        
+        
         <!-- About me section -->
         <section id="about_me">
             <div class="container">
@@ -52,7 +60,7 @@
                     <ul>
                         <li>
                             <div class="skill">Java</div>
-                            <div class="skill_bar" level="5"></div>
+                            <div class="skill_bar" level="5"><div class="level"></div></div>
                         </li>
                         <li>
                             <div class="skill" >C</div>
@@ -107,39 +115,44 @@
         <section id="projects">
             <div class="container">
                 <h1>Projects</h1>
-                <ul>
-                    <div class="left_col">
-                        <li class="project">
-                            <div class="title_desc">
-                                <h2 class="title">Hangman</h2>
-                                <div class="short_desc">Java Minigame</div>
+                    <ul>
+                        <div class="grid">
+                            <div class="left_col">
+                                <img src="img/Hangman%20img.jpg">
+                                <li class="project">
+                                    <div class="title_desc">
+                                        <h2 class="title">Hangman</h2>
+                                        <div class="short_desc">Java Minigame</div>
+                                    </div>
+                                    <button>More Info</button>
+                                    <!--    <div class="description">
+                                            <p>A version of the classic game Hangman. The game utilizes File I/O for a word bank and Java Graphics for a GUI.</p>
+                                            <a href="https://github.com/b-saad/" target="_blank">https://github.com/b-saad/</a>
+                                        </div>
+                                    -->
+                                </li>
                             </div>
-                            <button>More Info</button>
-                            <!--    <div class="description">
-                                    <p>A version of the classic game Hangman. The game utilizes File I/O for a word bank and Java Graphics for a GUI.</p>
-                                    <a href="https://github.com/b-saad/" target="_blank">https://github.com/b-saad/</a>
-                                </div>
-                            -->
-                        </li>
-                    </div>
-                    <div class="mid_col">
-                        <li class="project">
-                            <div class="title_desc">
-                                <h2 class="title">Hangman</h2>
-                                <div class="short_desc">Java Minigame</div>
+                            <div class="mid_col">
+                                <img src="img/Hangman%20img.jpg">
+                                <li class="project">
+                                    <div class="title_desc">
+                                        <h2 class="title">Project 2</h2>
+                                        <div class="short_desc">Description</div>
+                                    </div>
+                                    <button>More Info</button>
+                                </li>
                             </div>
-                            <button>More Info</button>
-                        </li>
-                    </div>
-                    <div class="right_col">
-                        <li class="project">
-                            <div class="title_desc">
-                                <h2 class="title">Hangman</h2>
-                                <div class="short_desc">Java Minigame</div>
+                            <div class="right_col">
+                                <img src="img/Hangman%20img.jpg">
+                                <li class="project">
+                                    <div class="title_desc">
+                                        <h2 class="title">Project 3</h2>
+                                        <div class="short_desc">Description</div>
+                                    </div>
+                                    <button>More Info</button>
+                                </li>
                             </div>
-                            <button>More Info</button>
-                        </li>
-                    </div>
+                        </div>
                 </ul>
             </div>
         </section>

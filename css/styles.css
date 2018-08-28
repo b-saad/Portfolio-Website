@@ -17,6 +17,8 @@ font-family: 'Open Sans', sans-serif;
 
 html {
     box-sizing: border-box;
+    height: 100%;
+    width: 100%;
 }
 
 *, *:before, *:after {
@@ -26,6 +28,13 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    height: 100%;
+    width: 100%;
 }
 
 h1 {
@@ -64,15 +73,19 @@ button:hover {
 
 /*************** Header/Footer Styles *****************/
 
-header {
+#header {
     background: #414650;
     color: #FFFFFF;
     text-align: right;
 }
 
 header .container {
-    padding-top: 0;
-    padding-bottom: 0;
+    width: 100%;
+    background: #414650;
+    padding: 0 10%;
+    position: fixed;
+    text-align: right;
+    margin: 0;
 }
 
 header ul {
@@ -94,6 +107,23 @@ header a:hover {
 }
 
 
+/*************** landing Section Styles *****************/
+
+#landing  {
+    background: url(../img/banner.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+
 /*************** About Me Section Styles *****************/
 
 #about_me {
@@ -102,7 +132,7 @@ header a:hover {
 
 #about_me p {
     margin-top: 1%;
-    margin-bottom: 1%;
+    margin-bottom: 2%;
 }
 
 #about_me a {
@@ -122,6 +152,10 @@ header a:hover {
     background: #F4F5F7;
 }
 
+#skills_profile h2 {
+    font-weight: 400;
+}
+
 #skills_profile p {
     font-size: 0.75em;
     text-align: center;
@@ -132,10 +166,22 @@ header a:hover {
 #skills_profile ul {
     margin-top: 0;
     margin-bottom: 0.5%;
+    list-style: none;
 }
 
 #skills_profile li div {
     font-size: 0.75em;
+}
+
+.skill_bar {
+    width: 100%;
+    height: 18px;
+    background: lightblue;
+    margin-bottom: 1%;
+}
+
+.level {
+    
 }
 
 
@@ -145,13 +191,19 @@ header a:hover {
     background: #FFFFFF;
 }
 
+
 .left_col, .mid_col, .right_col {
-    display: inline-block;
-    padding: 15% 8% 1% 1%;
-    width: 25%;
-    margin: 2% 4% 0 4%;
     background: #F4F5F7;
     border: 2px solid #27A9F9;
+    overflow:hidden;
+}
+
+.grid {
+    display: grid;
+    margin: 2% 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 5%;
+    grid-template-rows: 
 }
 
 #projects ul {
@@ -160,21 +212,20 @@ header a:hover {
     list-style-type: none;
 }
 
-.title_desc {
-    display: inline-block;
-    float: left;
-    padding: 0 0 2% 2%;
-}
-
 .short_desc {
     font-size: 0.75em;
 }
 
-#projects button {
-    display: inline-block;
-    padding: 5%;
-    position: relative;
-    left: 50%;
+.project {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    padding: 3%;
+    
+}
+
+#projects img {
+    width: 100%;
+
 }
 
 
