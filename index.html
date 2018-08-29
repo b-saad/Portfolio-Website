@@ -5,6 +5,7 @@
         <meta name="description" content="The homepage for Bilal Saad's portfolio website">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
         <link rel="stylesheet"  href="css/styles.css">
         <title>Bilal Saad Homepage</title>
     </head>
@@ -31,21 +32,26 @@
     </header>
 
     <main>
-        
+
         <!--   Landing page      -->
-        <section id="landing">
-        
-        </section>
-        
-        
+        <section id="landing"></section>
+
+
         <!-- About me section -->
         <section id="about_me">
             <div class="container">
-            <h1 >About Me</h1>
-            <p>Hey I'm Bilal, nice to meet you. I am currently a Computer Science student at the University of Waterloo. Other than programming, I spend my time reading books, enoying delicous food and dabbling in photography.</p>
-            <a href="doc/Resume%20PDF.pdf" target="_blank">
-                <button>Resume</button>
-            </a>
+                <h1 >About Me</h1>
+                <div class="profile_grid">
+                    <div class="img">
+                        <img src="img/placeholder-square.jpg">
+                    </div>
+                    <div class="info">
+                        <p>Hey I'm Bilal, nice to meet you. I am currently a Computer Science student at the University of Waterloo. Other than programming, I spend my time reading books, enoying delicous food and dabbling in photography.</p>
+                        <a href="doc/Resume%20PDF.pdf" target="_blank">
+                            <button>Resume</button>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -53,11 +59,11 @@
         <section id="skills_profile">
             <div class="container">
             <h1 >Skills Profile</h1>
-            <p>1 = Basic Knowledge, 3 = Working Knowledge, 5 = Proficient</p>
+            <p>1&nbsp;=&nbsp;Basic&nbsp;Knowledge, 3&nbsp;=&nbsp;Working Knowledge, 5&nbsp;=&nbsp;Proficient</p>
             <ul>
                 <li>
-                    <h2>Programming languages</h2>
-                    <ul>
+                    <h2>Programming languages:</h2>
+                    <ul class="nested_list">
                         <li>
                             <div class="skill">Java</div>
                             <div class="skill_bar" level="5"><div class="level"></div></div>
@@ -97,8 +103,8 @@
                     </ul>
                 </li>
                 <li>
-                    <h2>Technolegies</h2>
-                    <ul>
+                    <h2>Technolegies:</h2>
+                    <ul class="nested_list_2">
                         <li>
                             <div>GIT</div>
                         </li>
@@ -124,7 +130,9 @@
                                         <h2 class="title">Hangman</h2>
                                         <div class="short_desc">Java Minigame</div>
                                     </div>
-                                    <button>More Info</button>
+                                    <a href="https://github.com/b-saad/" >
+                                        <button>More Info</button>
+                                    </a>
                                     <!--    <div class="description">
                                             <p>A version of the classic game Hangman. The game utilizes File I/O for a word bank and Java Graphics for a GUI.</p>
                                             <a href="https://github.com/b-saad/" target="_blank">https://github.com/b-saad/</a>
@@ -139,7 +147,9 @@
                                         <h2 class="title">Project 2</h2>
                                         <div class="short_desc">Description</div>
                                     </div>
-                                    <button>More Info</button>
+                                    <a href="https://github.com/b-saad/" >
+                                        <button>More Info</button>
+                                    </a>
                                 </li>
                             </div>
                             <div class="right_col">
@@ -149,25 +159,30 @@
                                         <h2 class="title">Project 3</h2>
                                         <div class="short_desc">Description</div>
                                     </div>
-                                    <button>More Info</button>
+                                    <a href="https://github.com/b-saad/" >
+                                        <button>More Info</button>
+                                    </a>
                                 </li>
                             </div>
                         </div>
                 </ul>
             </div>
         </section>
-        
+
         <!-- Contact Information Section -->
         <section id="contact_info">
             <div class="container">
                 <h1>Contact Information</h1>
-                <h2>Email: bsaad@uwaterloo.ca</h2>
                 <h2>
-                    LinkedIn:
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:bsaad@uwaterloo.ca">bsaad@uwaterloo.ca</a>
+                </h2>
+                <h2>
+                    <i class="fab fa-linkedin"></i>
                     <a href="https://www.linkedin.com/?trk=nav_logo">linkedin.com</a>
                 </h2>
                 <h2>
-                    GitHub
+                    <i class="fab fa-github"></i>
                     <a href="https://github.com/b-saad/" target="_blank">github.com/b-saad/</a>
                 </h2>
             </div>
