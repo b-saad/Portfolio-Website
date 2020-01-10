@@ -120,7 +120,7 @@ header a:hover {
 /*************** landing Section Styles *****************/
 
 #landing  {
-    background: url(../img/banner.jpg);
+    background: url(banner.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
