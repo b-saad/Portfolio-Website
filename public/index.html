@@ -8,6 +8,8 @@
       name="description"
       content="The homepage for Bilal Saad's portfolio website"
     />
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>Bilal Saad Homepage</title>
   </head>
@@ -29,190 +31,17 @@
         <title>Bilal Saad Homepage</title>
     </head>
 <body>
-    <header>
-        <div class="container">
-            <nav id="main_nav">
-                <ul>
-                    <li>
-                        <a href="#about_me">About Me</a>
-                    </li>
-                    <li>
-                        <a href="#skills_profile">Skills Profile</a>
-                    </li>
-                    <li>
-                        <a href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#contact_info">Contact Information</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
     <main>
-
+        
         <!--   Landing page      -->
         <section id="landing">
-            <p>Welcome</p>
+            <div class="LandingInfoCard">
+                <h1>Bilal Saad</h1>
+                <h4>Software Developer</h4>
+                <p>Hi, nice to meet you. I am currently a Computer Science student at the University of Waterloo - below you can find a collection of personal projects that I have worked on and my contact information</p>
+            </div>
             <div class='icon-scroll'></div>
-        </section>
-
-        
-
-
-        <!-- About me section -->
-        <section id="about_me">
-            <div class="container">
-                <h1 >About Me</h1>
-                <div class="profile_grid">
-                    <div class="img">
-                        <img src="interests-600.png">
-                    </div>
-                    <div class="info">
-                        <p>Hey I'm Bilal, nice to meet you. I am currently a Computer Science student at the University of Waterloo. Other than programming, I spend my time reading books, enjoying delicious food and dabbling in photography.  <br /> <br />Below lies a list of my current programming related skills along with a collection of personal projects that I have worked on and my contact information</p>
-                        <a href="Resume%20PDF.pdf" target="_blank">
-                            <button>Resume</button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Profile -->
-        <section id="skills_profile">
-            <div class="container">
-            <h1 >Skills Profile</h1>
-            <p>1&nbsp;=&nbsp;Basic&nbsp;Knowledge, 3&nbsp;=&nbsp;Working Knowledge, 5&nbsp;=&nbsp;Proficient</p>
-            <ul>
-                <li>
-                    <h2>Programming languages:</h2>
-                    <ul class="nested_list">
-                        <li>
-                            <div class="skill">Java</div>
-                            <div class="skill_bar" level="5">
-                                <div class="level-1 fill"></div>
-                                <div class="level-2 fill"></div>
-                                <div class="level-3 fill"></div>
-                                <div class="level-4 fill"></div>
-                                <div class="level-5 fill"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill" >C</div>
-                            <div class="skill_bar" level="4">
-                                <div class="level-1 fill"></div>
-                                <div class="level-2 fill"></div>
-                                <div class="level-3 fill"></div>
-                                <div class="level-4 fill"></div>
-                                <div class="level-5"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill">C++</div>
-                            <div class="skill_bar" level="3">
-                                <div class="level-1 fill"></div>
-                                <div class="level-2 fill"></div>
-                                <div class="level-3 fill"></div>
-                                <div class="level-4"></div>
-                                <div class="level-5"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill">Python</div>
-                            <div class="skill_bar" level="5">
-                                <div class="level-1 fill"></div>
-                                <div class="level-2 fill"></div>
-                                <div class="level-3 fill"></div>
-                                <div class="level-4"></div>
-                                <div class="level-5"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill">HTML</div>
-                            <div class="skill_bar" level="4">
-                                <div class="level-1 fill"></div>
-                                <div class="level-2 fill"></div>
-                                <div class="level-3 fill"></div>
-                                <div class="level-4 fill"></div>
-                                <div class="level-5"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill" >CSS</div>
-                            <div class="skill_bar" level="4">
-                                <div class="level-1 fill"></div>
-                                <div class="level-2 fill"></div>
-                                <div class="level-3 fill"></div>
-                                <div class="level-4 fill"></div>
-                                <div class="level-5"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill">Javascript</div>
-                            <div class="skill_bar" level="3">
-                                <div class="level-1 fill"></div>
-                                <div class="level-2 fill"></div>
-                                <div class="level-3 fill"></div>
-                                <div class="level-4"></div>
-                                <div class="level-5"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill">Swift</div>
-                            <div class="skill_bar" level="2">
-                                <div class="level-1 fill"></div>
-                                <div class="level-2 fill"></div>
-                                <div class="level-3 fill"></div>
-                                <div class="level-4 fill"></div>
-                                <div class="level-5"></div>
-                            </div>
-                        </li>
-                            <div class="skill">Objective-C</div>
-                            <div class="skill_bar" level="3">
-                                <div class="level-1 fill"></div>
-                                <div class="level-2 fill"></div>
-                                <div class="level-3 fill"></div>
-                                <div class="level-4"></div>
-                                <div class="level-5"></div>
-                            </div>
-                        <li>
-                            <div class="skill">Racket</div>
-                            <div class="skill_bar" level="4">
-                                <div class="level-1 fill"></div>
-                                <div class="level-2 fill"></div>
-                                <div class="level-3 fill"></div>
-                                <div class="level-4 fill"></div>
-                                <div class="level-5"></div>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <h2>Tools:</h2>
-                    <ul class="nested_list_2">
-                        <li>
-                            <div>GIT</div>
-                        </li>
-                        <li>
-                            <div>SQL</div>
-                        </li>
-                        <li>
-                            <div>Xcode</div>
-                        </li>
-                        <li>
-                            <div>eclipse</div>
-                        </li>
-                        <li>
-                            <div>Unix</div>
-                        </li>
-                        <li>
-                            <div>Bash</div>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            </div>
         </section>
 
         <!-- Projects Section-->
@@ -222,6 +51,18 @@
                     <ul>
                         <div class="grid">
                             <div class="left_col shadow">
+                                <img src="weather_app1200x600.png">
+                                <li class="project">
+                                    <div class="title_desc">
+                                        <h2 class="title">Forecast</h2>
+                                        <div class="short_desc">Weather App for iOS</div>
+                                    </div>
+                                    <a href="https://github.com/b-saad/weather_app" >
+                                        <button>More Info</button>
+                                    </a>
+                                </li>
+                            </div>
+                            <div class="mid_col shadow">
                                 <img src="Hangman%20img.jpg">
                                 <li class="project">
                                     <div class="title_desc">
@@ -236,18 +77,6 @@
                                             <a href="https://github.com/b-saad/" target="_blank">https://github.com/b-saad/</a>
                                         </div>
                                     -->
-                                </li>
-                            </div>
-                            <div class="mid_col shadow">
-                                <img src="weather_app1200x600.png">
-                                <li class="project">
-                                    <div class="title_desc">
-                                        <h2 class="title">Forecast</h2>
-                                        <div class="short_desc">Weather App for iOS</div>
-                                    </div>
-                                    <a href="https://github.com/b-saad/weather_app" >
-                                        <button>More Info</button>
-                                    </a>
                                 </li>
                             </div>
                             <div class="right_col shadow">
@@ -288,4 +117,3 @@
     </main>
 </body>
 </html>
-

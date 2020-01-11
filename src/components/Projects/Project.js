@@ -3,7 +3,7 @@ import './css/Project.css';
 
 class Project extends Component {
     render() {
-        const { name, link, github, technologies, description } = this.props;
+        const { name, link, technologies, description } = this.props;
         const linkElement = link != null ? <a href={link}>{link.replace(/(^\w+:|^)\/\//, '')}</a> : null
         return (
             <div className="Project flex-container">

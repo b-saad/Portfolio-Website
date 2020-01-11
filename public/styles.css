@@ -81,41 +81,7 @@ a {
     -webkit-box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.2);
-}   
-
-
-/*************** Header/Footer Styles *****************/
-
-header .container {
-    width: 100%;
-    background: #414650;
-    padding: 0 10%;
-    position: fixed;
-    text-align: right;
-    margin: 0;
-    z-index: 1;
-}
-
-header ul {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0;
-}
-
-header li {
-    display: inline-block;
-    padding: 1.5%;
-}
-
-header a {
-    color: #FFFFFF;;
-}
-
-header a:hover {
-    color: #27A9F9;
-}
-
-
+}  
 
 /*************** landing Section Styles *****************/
 
@@ -133,15 +99,35 @@ header a:hover {
     display: block;
 }
 
-#landing p {
+.LandingInfoCard {
+    position: absolute;
+    margin: 0 5%;
+    padding: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 40vw;
+    color: white;
+}
+
+.LandingInfoCard h1 {
+    Font-size: calc(65px + 1.75vw);
+    color: white;
+    text-align: left;
     margin: 0;
     padding: 0;
-    position: relative;
-    top: 40%;
-    text-align: center;
-    font-size: 170%;
-    color: white;
-    font-weight: 700;
+}
+
+.LandingInfoCard h4 {
+    Font-size: calc(20px + 1.25vw);
+    margin: 0;
+    padding: 0;
+}
+
+.LandingInfoCard p {
+    font-size: calc(12px + 0.75vw);
+    margin: 0;
+    padding: 10px 0 0 0;
 }
 
 .icon-scroll,
@@ -181,104 +167,6 @@ header a:hover {
     transform: translateY(35px);
     }
 }
- 
-/*************** About Me Section Styles *****************/
-
-#about_me {
-    background: #FFFFFF;
-}
-
-#about_me h1 {
-    margin-bottom: 2%
-}
-
-.profile_grid {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    grid-column-gap: 5%;
-}
-
-.profile_grid img {
-    width: 100%;
-}
-
-
-.profile_grid .info{
-    align-self: center;
-}
-
-#about_me p {
-    margin-bottom: 5%;
-    line-height: 2;
-    padding: 0 10%;
-}
-
-#about_me a {
-    text-decoration: none;
-    color: #27A9F9;
-
-}
-
-#about_me button {
-    width: 80%;
-    font-size: 110%;
-    padding: 3%;
-    margin: 0 10%;
-}
-
-
-/*************** Skills Profile Section Styles *****************/
-
-#skills_profile {
-    background: #F4F5F7;
-}
-
-#skills_profile h2 {
-    font-size: 120%;
-    font-weight: 400;
-}
-
-#skills_profile p {
-    text-align: center;
-    margin-top: 1%;
-    margin-bottom: 2%;
-}
-
-#skills_profile ul {
-    margin-top: 2%;
-    margin-bottom: 1%;
-    list-style: none;
-    padding: 0;
-}
-
-#skills_profile ul .nested_list {
-    padding: 0 0 0 4%;
-}
-
-#skills_profile ul .nested_list_2 li {
-    padding: 1% 4%;
-    display: inline-block;
-}
-
-
-.skill_bar {
-    margin: 0;
-    padding: 0;
-}
-
-.level-1, .level-2, .level-3, .level-4, .level-5 {
-    display: inline-block;
-    width: 19%;
-    background: grey;
-    height: 13px;
-    border: white 1px solid;;
-    margin-bottom: 2%;
-}
-
-.fill {
-    background: #27A9F9;
-}
-
 
 /*************** Projects Section Styles *****************/
 
@@ -361,7 +249,12 @@ header a:hover {
 /*************** Media Queries Styles *****************/
 
 @media (max-width: 1153px) {
-    
+
+    /* Landing */
+    .LandingInfoCard {
+        width: 50vw;
+    }
+
     /* contact information section */
     #contact_info h2 {
         display: block;
@@ -372,30 +265,16 @@ header a:hover {
         margin: 0;
         width: 100%
     }
-    
-    #about_me button {
-        margin-bottom: 5%;
-    }
+
 }
 
 @media (max-width: 768px) {
     
-    /* Navigation bar */
-    header .container {
-        padding: 0;
-        margin: 0;
-        text-align: center;
+    /* Landing */
+    .LandingInfoCard {
+        margin: 0 5%;
+        width: 60vw;
     }
-    
-    
-    /* About me section */
-    .profile_grid {
-        display: block;
-    }   
-    
-    
-    /* Skills section */
-    
     
     /* projects section */
     .grid {
@@ -407,10 +286,23 @@ header a:hover {
     }
 }
 
-@media (max-width: 465px){
+@media (max-width: 576px) {
     
-    /* Navigation bar */
-    header a {
-        font-size: 75%;
+    /* Landing */
+    .LandingInfoCard {
+        top: auto;
+        -ms-transform: none;
+        transform: none;
+        bottom: 40px;
+        margin: 0 5%;
+        width: 90vw;
     }
+
+    .icon-scroll {
+        display: none;
+    }
+
 }
+
+
+
