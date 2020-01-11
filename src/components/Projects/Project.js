@@ -3,15 +3,24 @@ import './css/Project.css';
 
 class Project extends Component {
     render() {
-        const { key, name, link, github, technologies, description } = this.props;
-        const linkElement = link != null ? <a href={link}>Check it out</a> : null
+        const { name, link, github, technologies, description } = this.props;
+        const linkElement = link != null ? <a href={link}>{link.replace(/(^\w+:|^)\/\//, '')}</a> : null
         return (
-            <div className="Project" key={key}>
-                <h3>{name}</h3>
-                {linkElement}
-                <a href={github}>{github}</a>
-                <p>{technologies}</p>
-                <p>{description}</p>
+            <div className="Project flex-container">
+                <div className="Project-Info">
+                    <h3>
+                        {name}
+                          {/* - 
+                        <a href={github}>
+                            <i className="fab fa-github"></i>
+                        </a> */}
+                    </h3>
+                    {linkElement}
+                </div>
+                <div className="Project-Details">
+                    <p>{technologies}</p>
+                    <p>{description}</p>
+                </div>
             </div>
         );
     }
