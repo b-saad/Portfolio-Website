@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <div className="App">
         <Landing landingInfo={PersonalInfo.landing} />
-        <Projects />
+        <Projects projects={PersonalInfo.projects}/>
       </ div>
     );
   }

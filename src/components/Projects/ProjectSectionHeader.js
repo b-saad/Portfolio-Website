@@ -4,9 +4,9 @@ import './css/ProjectSectionHeader.css';
 class ProjectSectionHeader extends Component {
     render() {
         return (
-            <h1 className="ProjectSectionHeader">
+            <h2 className="ProjectSectionHeader">
                 {this.props.title}
-            </h1>
+            </h2>
         );
     }
   }
