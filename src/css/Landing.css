@@ -1,0 +1,13 @@
+.Landing {
+    height: 100vh;
+    width: 100vw;
+    background: url(../assets/sky-sunset-night-blue-nature-3840x2160.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}

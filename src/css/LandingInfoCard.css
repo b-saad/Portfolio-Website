@@ -1,0 +1,27 @@
+.LandingInfoCard {
+    position: absolute;
+    margin: 0 0 0 5%;
+    padding: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 40vw;
+}
+
+.LandingInfoCard h1 {
+    font-size: calc(60px + 0.75vw);
+    margin: 0;
+    padding: 0;
+}
+
+.LandingInfoCard h4 {
+    font-size: calc(18px + 0.75vw);
+    margin: 0;
+    padding: 0;
+}
+
+.LandingInfoCard p {
+    font-size: calc(15px + 0.75vw);
+    margin: 0;
+    padding: 5px 0 0 0;
+}
