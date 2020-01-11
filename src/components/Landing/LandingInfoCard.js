@@ -1,5 +1,5 @@
 import  React, { Component } from 'react';
-import '../../css/LandingInfoCard.css';
+import './css/LandingInfoCard.css';
 
 class LandingInfoCard extends Component {
     render() {
