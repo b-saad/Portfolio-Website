@@ -77,11 +77,17 @@ a {
 /* Shadows */
 
 .shadow {
-    -webkit-appearance: none;
-    -webkit-box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.2);
-    box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.2);
-}  
+    -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+} 
+
+.shadow:hover {
+    -webkit-box-shadow: 0px 7px 14px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 7px 14px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 7px 14px 0px rgba(0, 0, 0, 0.2);
+}
 
 /*************** landing Section Styles *****************/
 
@@ -176,8 +182,9 @@ a {
 
 .left_col, .mid_col, .right_col {
     background: #F4F5F7;
-    border: 2px solid #27A9F9;
-    overflow:hidden;
+    border-radius: 10px;
+    border: 1px solid #dfe1e5;
+    overflow: hidden;
 }
 
 .grid {
@@ -214,7 +221,6 @@ a {
 #projects button {
     padding: 10%;
 }
-
 
 
 /*************** Contact Information Section Styles *****************/
