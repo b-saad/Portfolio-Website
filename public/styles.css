@@ -228,13 +228,20 @@ a {
 }
 
 #contact_info h2 {
-    display: inline-block;
-    font-size: 150%;
+    font-size: calc(10px + 0.75vw);
     font-weight: 400;
+}
+
+#contact_info .flex_container{
+    display: flex;
+    align-items: center;
+}
+
+#contact_info .flex_item {
+    flex: 1 1 0;
+    justify-content: center;
+    margin: auto;
     text-align: center;
-    padding: 2%; 
-    margin: 0;
-    width: 33%
 }
 
 #contact_info a {
@@ -248,24 +255,24 @@ a {
 
 /*************** Media Queries Styles *****************/
 
-@media (max-width: 1153px) {
+@media (max-width: 992px) {
 
     /* Landing */
     .LandingInfoCard {
         width: 50vw;
     }
 
-    /* contact information section */
-    #contact_info h2 {
-        display: block;
-        font-size: 150%;
-        font-weight: 400;
-        text-align: center;
-        padding: 2%; 
-        margin: 0;
-        width: 100%
+    /* projects section */
+    .grid {
+        display: grid;
+        margin: 2% 0;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 5%;
     }
-
+    
+    .left_col, .mid_col, .right_col {
+        margin-bottom: 5%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -275,14 +282,17 @@ a {
         margin: 0 5%;
         width: 60vw;
     }
-    
-    /* projects section */
-    .grid {
-        display: block;
+
+
+    /* contact information section */
+    #contact_info .flex_container {
+        flex-direction: column;
+        height: auto;
     }
-    
-    .left_col, .mid_col, .right_col {
-        margin-bottom: 5%;
+
+    #contact_info .flex_item {
+        font-size: calc(15px + 1.25vw);
+        padding: 7px;
     }
 }
 
@@ -300,6 +310,11 @@ a {
 
     .icon-scroll {
         display: none;
+    }
+
+    /* projects */
+    .grid {
+        display: block;
     }
 
 }
