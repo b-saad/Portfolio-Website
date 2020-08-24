@@ -93,7 +93,7 @@ a {
 /*************** landing Section Styles *****************/
 
 #landing  {
-    background: url(koiCropped.png);
+    background: url(../img/koiCropped.png);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -319,7 +319,7 @@ a {
     
     /* Landing */
     #landing {
-        background: url(koiMobile.png);
+        background: url(../img/koiMobile.png);
         -webkit-background-size: 100vw 101vh;
         -moz-background-size: 100vw 101vh;
         -o-background-size: 100vw 101vh;
